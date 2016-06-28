@@ -1,0 +1,6 @@
+for file in $HOME/bin/bash/addons/* ; do
+  if [ -f "$file" ] ; then
+    echo "Sourcing file $file"
+    . "$file"
+  fi
+done
